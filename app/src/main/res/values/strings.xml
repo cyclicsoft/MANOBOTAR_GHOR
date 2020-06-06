@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">MANOBOTAR GHOR</string>
+    <string name="txt_bangla" translatable="false">বাংলা</string>
+    <string name="txt_english" translatable="false">English</string>
+
+    <!-- Init Settings -->
+    <string name="txt_slect_lang">Please select your language</string>
+    <string name="txt_donate">MAKE DONATION</string>
+    <string name="txt_donate_description"><i>The measure of life is not its duration, but its donation.</i> - Peter Marshall</string>
+    <string name="txt_search_donar">REQUEST DONATION</string>
+    <string name="txt_search_donar_description"><i>If you need Blood or Plasma. Request it immediately also you can explore the donor.</i></string>
+    <string name="txt_explore">EXPLORE DONATION</string>
+    <string name="txt_explore_description">Checkout the available donor can save a life. Please don\'t make any unnecessary request. May be you wont get it in right time. </string>
+    <string name="txt_finish_btn_init_settings" translatable="false">FINISH</string>
+    <string name="txt_ok_btn_initial_settings" translatable="false">OK</string>
+
 </resources>

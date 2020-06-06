@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/lang_dialog_margin_top"
+    android:layout_marginBottom="@dimen/lang_dialog_margin_bot"
+    android:minHeight="@dimen/lang_dialog_min_height">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_bn"
+        android:layout_width="@dimen/lang_dialog_item_size"
+        android:layout_height="@dimen/lang_dialog_item_size"
+        android:layout_marginTop="@dimen/lang_dialog_item_margin_top"
+        android:background="@drawable/circular_content_bg_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/txt_bangla"
+        android:textAlignment="center"
+        android:textSize="@dimen/lang_dialog_item_txt_size"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_v65"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_en"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_en"
+        android:layout_width="@dimen/lang_dialog_item_size"
+        android:layout_height="@dimen/lang_dialog_item_size"
+        android:layout_marginTop="@dimen/lang_dialog_item_margin_top"
+        android:background="@drawable/circular_content_bg_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/txt_english"
+        android:textAlignment="center"
+        android:textSize="@dimen/lang_dialog_item_txt_size"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_v65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_bn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lang_dialog_ok_btn_margin_start"
+        android:layout_marginEnd="@dimen/lang_dialog_ok_btn_margin_end"
+        android:layout_marginBottom="@dimen/lang_dialog_ok_btn_margin_bot"
+        android:background="@drawable/btn_bg"
+        android:text="@string/txt_ok_btn_initial_settings"
+        android:textColor="@color/color_ok_btn_initial_settings"
+        android:textSize="@dimen/lang_dialog_ok_btn_txt_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_h50"
+        app:layout_constraintTop_toTopOf="@+id/guideline_v65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#FFAEAE</color>
+    <color name="colorPrimaryDark">#FF3B3B</color>
     <color name="colorAccent">#03DAC5</color>
+    <!-- Splash Screen -->
+    <color name="colorSplashBackground">#FFFFFF</color>
+    <color name="color_text_splash_title">#FFFFFF</color>
+
+    <color name="color_grad_start">#FF217A</color>
+    <color name="color_grad_end">#FF4D4D</color>
+
+    <!-- Language selection dialog -->
+    <color name="color_dialog_item_bg_unselected">#AEAEAE</color>
+    <color name="color_dialog_item_bg_selected">#FF316A</color>
+
+    <color name="color_dialog_item_txt_unselected">#AEAEAE</color>
+    <color name="color_dialog_item_txt_selected">#FF316A</color>
+
+    <color name="color_dot_tab_indicator">#FFFFFF</color>
+    <color name="color_txt_finish_btn_initial_settings">#FFFFFF</color>
+    <color name="color_ok_btn_initial_settings">#FFFFFF</color>
 </resources>

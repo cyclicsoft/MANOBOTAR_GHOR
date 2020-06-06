@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Init Settings -->
+    <dimen name="lang_dialog_min_height">160dp</dimen>
+    <dimen name="lang_dialog_margin_top">36dp</dimen>
+    <dimen name="lang_dialog_margin_bot">16dp</dimen>
+    <dimen name="lang_dialog_item_size">60dp</dimen>
+    <dimen name="lang_dialog_item_margin_top">8dp</dimen>
+    <dimen name="lang_dialog_item_txt_size">15sp</dimen>
+    <dimen name="lang_dialog_ok_btn_margin_start">16dp</dimen>
+    <dimen name="lang_dialog_ok_btn_margin_end">16dp</dimen>
+    <dimen name="lang_dialog_ok_btn_margin_bot">8dp</dimen>
+    <dimen name="lang_dialog_ok_btn_txt_size">20sp</dimen>
+    <dimen name="stroke_lang_setting_dialog_item">1dp</dimen>
+    <dimen name="radious_btn_bg">20dp</dimen>
+    <dimen name="size_icon_splash">70dp</dimen>
+    <dimen name="corner_radius_dot_init_settings">8dp</dimen>
+    <dimen name="size_dot_init_settings">16dp</dimen>
+    <dimen name="dot_spaces_init_settings">4dp</dimen>
+    <dimen name="padding_start_finish_btn_init_settings">20dp</dimen>
+    <dimen name="padding_end_finish_btn_initial_settings">20dp</dimen>
+    <dimen name="padding_top_finish_btn_initial_settings">10dp</dimen>
+    <dimen name="padding_bot_finish_btn_initial_settings">10dp</dimen>
+    <dimen name="txt_size_finish_btn_initial_settings">17sp</dimen>
+
+
+</resources>

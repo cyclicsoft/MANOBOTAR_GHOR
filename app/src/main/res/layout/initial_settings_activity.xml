@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".initialsettings.InitialSettingsActivity" >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_initial_screens"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:dotsColor="@color/color_dot_tab_indicator"
+        app:dotsCornerRadius="@dimen/corner_radius_dot_init_settings"
+        app:dotsSize="@dimen/size_dot_init_settings"
+        app:dotsSpacing="@dimen/dot_spaces_init_settings"
+        app:dotsWidthFactor="2.5"
+        app:layout_constraintBottom_toBottomOf="@+id/vp_initial_screens"
+        app:layout_constraintEnd_toEndOf="@+id/vp_initial_screens"
+        app:layout_constraintStart_toStartOf="@+id/vp_initial_screens"
+        app:layout_constraintTop_toTopOf="@+id/vp_initial_screens"
+        app:layout_constraintVertical_bias="0.9"
+        app:progressMode="true"
+        app:selectedDotColor="@color/colorPrimary" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_finish_initial_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_sided"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/txt_finish_btn_init_settings"
+        android:paddingStart="@dimen/padding_start_finish_btn_init_settings"
+        android:paddingEnd="@dimen/padding_end_finish_btn_initial_settings"
+        android:paddingTop="@dimen/padding_top_finish_btn_initial_settings"
+        android:paddingBottom="@dimen/padding_bot_finish_btn_initial_settings"
+        android:textSize="@dimen/txt_size_finish_btn_initial_settings"
+        android:textAlignment="center"
+        android:textColor="@color/color_txt_finish_btn_initial_settings"
+        app:layout_constraintBottom_toBottomOf="@+id/vp_initial_screens"
+        app:layout_constraintEnd_toEndOf="@+id/vp_initial_screens"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/dots_indicator"
+        app:layout_constraintTop_toTopOf="@+id/vp_initial_screens"
+        app:layout_constraintVertical_bias="0.90" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

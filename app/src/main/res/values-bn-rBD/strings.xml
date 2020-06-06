@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">মানবতার ঘর</string>
+    <string name="txt_slect_lang">আপনার ভাষা নির্বাচন করুন</string>
+    <string name="txt_donate">দান করুন</string>
+    <string name="txt_search_donar">ডোনেশন রিকোয়েস্ট</string>
+    <string name="txt_donate_description">" জীবনের পরিমাপটি তার সময়কাল নয়, তবে এটি অনুদান। - পিটার মার্শাল "</string>
+    <string name="txt_explore">"অনুদান খুজুন  "</string>
+    <string name="txt_search_donar_description">আপনার যদি রক্ত ​​বা প্লাজমা প্রয়োজন হয়। এটি অবিলম্বে অনুরোধ করুন এছাড়াও আপনি দাতাকে অন্বেষণ করতে পারেন।</string>
+    <string name="txt_explore_description">" একটি দাতা একটি জীবন বাঁচাতে পারেন। কোনও অপ্রয়োজনীয় অনুরোধ করবেন না দয়া করে। হতে পারে আপনি সঠিক সময়ে এটি পাবেন না।"</string>
+</resources>
