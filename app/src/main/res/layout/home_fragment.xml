@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".home.ui.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_t_b_s_top_items_home"
+            android:layout_marginTop="@dimen/margin_t_b_s_top_items_home"
+            android:layout_marginEnd="@dimen/margin_t_b_s_top_items_home"
+            android:background="@drawable/bg_passt_hrough"
+            android:backgroundTintMode="multiply"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_s_e_top_items_home"
+            android:paddingTop="@dimen/padding_t_b_top_items_home"
+            android:paddingEnd="@dimen/padding_s_e_top_items_home"
+            android:paddingBottom="@dimen/padding_t_b_top_items_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="25000\n Donars"
+                android:textAlignment="center"
+                android:textColor="@color/color_txt_count_top_items_home"
+                android:textSize="@dimen/txt_size_count_top_items_home" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="FIND DONOR"
+                android:textColor="@color/color_button_text"
+                app:backgroundTint="@color/color_btn_bg_top_items_home"
+                app:cornerRadius="@dimen/radious_btn_bg"
+                app:elevation="@dimen/elevation_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_t_b_s_top_items_home"
+            android:layout_marginTop="@dimen/margin_t_top_second_item_home"
+            android:layout_marginEnd="@dimen/margin_t_b_s_top_items_home"
+            android:background="@drawable/bg_passt_hrough"
+            android:backgroundTintMode="multiply"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_s_e_top_items_home"
+            android:paddingTop="@dimen/padding_t_b_top_items_home"
+            android:paddingEnd="@dimen/padding_s_e_top_items_home"
+            android:paddingBottom="@dimen/padding_t_b_top_items_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="25000\n Requests"
+                android:textAlignment="center"
+                android:textColor="@color/color_txt_count_top_items_home"
+                android:textSize="@dimen/txt_size_count_top_items_home" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="SEE REQUEST"
+                android:textColor="@color/color_button_text"
+                app:backgroundTint="@color/color_btn_bg_top_items_home"
+                app:cornerRadius="@dimen/radious_btn_bg"
+                app:elevation="@dimen/elevation_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_card_container_home"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_bg_card_header"
+                android:elevation="@dimen/elevation_card_header"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding_t_b_card_header"
+                android:paddingBottom="@dimen/padding_t_b_card_header">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:paddingStart="@dimen/padding_s_title_card_header"
+                    android:text="EXPLORE LATEST FEED"
+                    android:textColor="@color/color_title_card_header"
+                    android:textSize="@dimen/txt_size_card_header_title" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawableStart="@drawable/ic_plus_filled_grad"
+                    android:paddingEnd="@dimen/padding_e_last_item_card_header"
+                    android:text="Post Update"
+                    android:textColor="@color/color_btn_card_header"
+                    android:textSize="@dimen/txt_size_card_header_title" />
+            </LinearLayout>
+
+            <include layout="@layout/card_event_item" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

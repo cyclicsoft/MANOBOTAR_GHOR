@@ -4,7 +4,7 @@ import android.animation.Animator
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.cyclicsoft.manobotarghor.MainActivity
+import com.cyclicsoft.manobotarghor.home.MainActivity
 import com.cyclicsoft.manobotarghor.R
 import com.cyclicsoft.manobotarghor.appfw.BaseActivity
 import com.cyclicsoft.manobotarghor.initialsettings.InitialSettingsActivity
@@ -45,7 +45,8 @@ class SplashActivity : BaseActivity() {
 
             override fun onAnimationEnd(animation: Animator?) {
                 if(mIsInitialized){
-                    Util.gotoActivity(this@SplashActivity, MainActivity(), false)
+                    Util.gotoActivity(this@SplashActivity,
+                        MainActivity(), false)
                 }else{
                     Util.gotoActivity(this@SplashActivity, InitialSettingsActivity(), false)
                 }
@@ -53,7 +54,8 @@ class SplashActivity : BaseActivity() {
 
             override fun onAnimationCancel(animation: Animator?) {
                 if(mIsInitialized){
-                    Util.gotoActivity(this@SplashActivity, MainActivity(), false)
+                    Util.gotoActivity(this@SplashActivity,
+                        MainActivity(), false)
                 }else{
                     Util.gotoActivity(this@SplashActivity, InitialSettingsActivity(), false)
                 }

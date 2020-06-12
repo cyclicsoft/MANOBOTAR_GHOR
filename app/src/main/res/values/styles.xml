@@ -14,4 +14,12 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:colorBackground">@color/colorSplashBackground</item>
     </style>
+
+    <style name="circleImageView" parent="AppTheme">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="background">@color/colorAccent</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+
 </resources>

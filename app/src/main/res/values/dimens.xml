@@ -1,6 +1,7 @@
 <resources>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="height_toolbar">65dp</dimen>
 
     <!-- Init Settings -->
     <dimen name="lang_dialog_min_height">160dp</dimen>
@@ -24,6 +25,27 @@
     <dimen name="padding_top_finish_btn_initial_settings">10dp</dimen>
     <dimen name="padding_bot_finish_btn_initial_settings">10dp</dimen>
     <dimen name="txt_size_finish_btn_initial_settings">17sp</dimen>
+
+    <!-- Home -->
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="margin_top_or_bot_card">5dp</dimen>
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="margin_top_bot_card_views_container">15dp</dimen>
+    <dimen name="txt_size_profile_name_card">18sp</dimen>
+    <dimen name="margin_top_bot_iv_card">15dp</dimen>
+    <dimen name="margin_top_txt_desc_card">16dp</dimen>
+    <dimen name="margin_t_b_s_top_items_home">20dp</dimen>
+    <dimen name="padding_s_e_top_items_home">20dp</dimen>
+    <dimen name="padding_t_b_top_items_home">30dp</dimen>
+    <dimen name="txt_size_count_top_items_home">17sp</dimen>
+    <dimen name="elevation_btn">5dp</dimen>
+    <dimen name="margin_t_top_second_item_home">8dp</dimen>
+    <dimen name="elevation_card_header">5dp</dimen>
+    <dimen name="padding_t_b_card_header">8dp</dimen>
+    <dimen name="padding_s_title_card_header">15dp</dimen>
+    <dimen name="txt_size_card_header_title">17sp</dimen>
+    <dimen name="padding_e_last_item_card_header">15dp</dimen>
+    <dimen name="elevation_toolbar">8dp</dimen>
 
 
 </resources>

@@ -7,7 +7,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
-import com.cyclicsoft.manobotarghor.MainActivity
+import com.cyclicsoft.manobotarghor.home.MainActivity
 import com.cyclicsoft.manobotarghor.R
 import com.cyclicsoft.manobotarghor.appfw.BaseActivity
 import com.cyclicsoft.manobotarghor.appfw.CSLog
@@ -73,7 +73,8 @@ class InitialSettingsActivity : BaseActivity() {
         })
         tv_finish_initial_screen.setOnClickListener {
             mViewModel.setInitialSettingFinished()
-            Util.gotoActivity(this@InitialSettingsActivity, MainActivity(), false)
+            Util.gotoActivity(this@InitialSettingsActivity,
+                MainActivity(), false)
         }
 
 
