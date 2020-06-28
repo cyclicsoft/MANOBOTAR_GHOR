@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.cardview.CircularRevealCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_top_or_bot_card"
+    android:layout_marginBottom="@dimen/margin_top_or_bot_card"
+    app:cardElevation="@dimen/elevation_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_bot_card_views_container">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_h25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_male_avatar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_h25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:srcCompat="@drawable/ic_face_black_100dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="100dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="50dp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_card_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_demo_name"
+            android:textColor="@color/color_profile_name_card"
+            android:textSize="@dimen/txt_size_profile_name_card"
+            app:layout_constraintBottom_toTopOf="@+id/tv_card_location"
+            app:layout_constraintEnd_toStartOf="@+id/guideline75"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/guideline_h25" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_card_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:text="@string/txt_demo_loc"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_v50"
+            app:layout_constraintEnd_toEndOf="@+id/tv_card_profile_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_card_profile_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_card_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_txt_desc_card"
+            android:background="@drawable/bg_gradiant"
+            android:text="@string/txt_donor_card_bottom_notification"
+            android:textAlignment="center"
+            android:textColor="@color/color_txt_donor_card_bottm_notificaation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_male_avatar" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_blood_group_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circular_dialog_item_disabled"
+            android:padding="10dp"
+            android:text="O+"
+            android:textAlignment="center"
+            android:textColor="@color/color_button_text"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline75"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="SEE REQUEST"
+            android:textColor="@color/color_button_text"
+            app:backgroundTint="@color/color_btn_bg_top_items_home"
+            app:cornerRadius="@dimen/radious_btn_bg"
+            app:elevation="@dimen/elevation_btn"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline75"
+            app:layout_constraintStart_toStartOf="@+id/guideline_h25"
+            app:layout_constraintTop_toTopOf="@+id/guideline_v50"
+            app:strokeColor="@color/color_dialog_item_bg_unselected" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_finish_initial_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_sided_filled"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="2dp"
+            android:text="Requested"
+            android:textAlignment="center"
+            android:textColor="@color/color_txt_finish_btn_initial_settings"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_blood_group_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline75"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.circularreveal.cardview.CircularRevealCardView>

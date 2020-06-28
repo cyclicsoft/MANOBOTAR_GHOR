@@ -46,6 +46,15 @@ dependencies {
 
     implementation 'com.eightbitlab:blurview:1.6.3'
 
+    //Flexible layout
+    implementation 'com.google.android:flexbox:2.0.1'
+
+    //Pinview
+    implementation 'com.chaos.view:pinview:1.4.3'
+
+    //Animation
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
 
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'

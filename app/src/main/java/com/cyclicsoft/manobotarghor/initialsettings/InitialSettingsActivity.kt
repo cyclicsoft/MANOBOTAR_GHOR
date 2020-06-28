@@ -13,7 +13,7 @@ import com.cyclicsoft.manobotarghor.appfw.BaseActivity
 import com.cyclicsoft.manobotarghor.appfw.CSLog
 import com.cyclicsoft.manobotarghor.utilites.AppConstants
 import com.cyclicsoft.manobotarghor.utilites.Util
-import kotlinx.android.synthetic.main.initial_settings_activity.*
+import kotlinx.android.synthetic.main.activity_initial_settings.*
 import kotlinx.android.synthetic.main.language_selection_dialog.*
 import kotlinx.android.synthetic.main.language_selection_dialog.view.*
 
@@ -26,7 +26,7 @@ class InitialSettingsActivity : BaseActivity() {
     }
 
     override fun createView(savedInstanceState: Bundle?) {
-        setContentView(R.layout.initial_settings_activity)
+        setContentView(R.layout.activity_initial_settings)
     }
 
     override fun setUpToolBar() {}

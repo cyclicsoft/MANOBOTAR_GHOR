@@ -21,7 +21,7 @@
             app:layout_constraintGuide_percent="0.25" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/iv_card_profile_image"
+            android:id="@+id/iv_male_avatar"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
@@ -39,7 +39,7 @@
             app:layout_constraintGuide_begin="100dp" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
+            android:id="@+id/guideline_v50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -49,10 +49,10 @@
             android:id="@+id/tv_card_profile_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="John Doe"
+            android:text="@string/txt_demo_name"
             android:textColor="@color/color_profile_name_card"
             android:textSize="@dimen/txt_size_profile_name_card"
-            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_v50"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="@+id/guideline_h25"
@@ -64,10 +64,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_location_on_black_24dp"
-            android:text="Dhaka"
+            android:text="@string/txt_demo_loc"
             app:layout_constraintEnd_toEndOf="@+id/tv_card_profile_name"
             app:layout_constraintStart_toStartOf="@+id/tv_card_profile_name"
-            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+            app:layout_constraintTop_toTopOf="@+id/guideline_v50" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/iv_event"
@@ -87,9 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_top_txt_desc_card"
-            android:text="It is a long established fact that a reader will be
-distracted by the readable content of a page when
-looking at its layout. The point of using Lorem"
+            android:text="@string/txt_demo_event_card_desc"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

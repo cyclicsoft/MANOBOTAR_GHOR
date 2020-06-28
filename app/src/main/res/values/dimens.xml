@@ -46,6 +46,34 @@
     <dimen name="txt_size_card_header_title">17sp</dimen>
     <dimen name="padding_e_last_item_card_header">15dp</dimen>
     <dimen name="elevation_toolbar">8dp</dimen>
-
-
+    <dimen name="margin_bot_donor_name_et">8dp</dimen>
+    <dimen name="padding_s_e_donor_name_et">30dp</dimen>
+    <dimen name="padding_t_b_donor_name_et">15dp</dimen>
+    <dimen name="margin_t_donor_email_et">8dp</dimen>
+    <dimen name="padding_s_e_donor_email_et">30dp</dimen>
+    <dimen name="padding_t_b_donor_email_et">15dp</dimen>
+    <dimen name="size_gender_avatar">70dp</dimen>
+    <dimen name="width_gender_divider">2dp</dimen>
+    <dimen name="height_gender_divider">50dp</dimen>
+    <dimen name="margin_s_e_gender_divider">24dp</dimen>
+    <dimen name="margin_t_b_group_item_holder">8dp</dimen>
+    <dimen name="size_group_item">50dp</dimen>
+    <dimen name="padding_group_item">10dp</dimen>
+    <dimen name="size_checkbox">25dp</dimen>
+    <dimen name="padding_checkbox">5dp</dimen>
+    <dimen name="margin_t_contact_show_checkbox">8dp</dimen>
+    <dimen name="padding_s_e_submit_btn">30dp</dimen>
+    <dimen name="padding_t_b_submit_btn">10dp</dimen>
+    <dimen name="size_txt_submit_btn">20sp</dimen>
+    <dimen name="margin_b_submit_btn">24dp</dimen>
+    <dimen name="margin_group_item" >2.5dp</dimen>
+    <dimen name="txt_size_country_code">17sp</dimen>
+    <dimen name="padding_country_code">15dp</dimen>
+    <dimen name="padding_se_et_mobile_no">30dp</dimen>
+    <dimen name="padding_tb_et_mobile_no">15dp</dimen>
+    <dimen name="txt_size_mobile_no">17sp</dimen>
+    <dimen name="margin_start_et_mobile_no">8dp</dimen>
+    <dimen name="txt_size_phone_verification_button">17sp</dimen>
+    <dimen name="padding_se_bt_phone_verification">30dp</dimen>
+    <dimen name="padding_tb_bt_phone_verification">12dp</dimen>
 </resources>

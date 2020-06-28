@@ -35,5 +35,21 @@
     <color name="color_bg_card_header">#FFFFFF</color>
     <color name="color_title_card_header">#000000</color>
     <color name="color_btn_card_header">#FF316A</color>
+    <color name="color_group_item_disabled">#A2A2A2</color>
+    <color name="color_group_item_selected">#FFFFFF</color>
+    <color name="color_txt_submit_btn">#FFFFFF</color>
+    <color name="color_add_donor_fragment_bg">#FFFFFF</color>
+    <color name="color_text_hint_add_donor_name_hint">#A2A2A2</color>
+    <color name="color_text_hint_add_donor_name">#000000</color>
+    <color name="color_text_hint_add_donor_email_hint">#A2A2A2</color>
+    <color name="color_text_hint_add_donor_email">#000000</color>
+    <color name="color_divider_bg">#C9C9C9</color>
+    <color name="color_selected_text_gender_selection">#FF3257</color>
+    <color name="color_unselected_text_gender_selection">#A2A2A2</color>
+    <color name="color_txt_plasma_check">#000000</color>
+    <color name="color_txt_number_show_check">#000000</color>
+    <color name="color_txt_donor_card_bottm_notificaation">#FFFFFF</color>
+    <color name="color_txt_phone_verification_button_">#FFFFFF</color>
+    <color name="color_bg_phone_verification">#FFFFFF</color>
 
 </resources>

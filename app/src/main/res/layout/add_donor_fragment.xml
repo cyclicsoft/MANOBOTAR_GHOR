@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_add_donor_fragment_bg"
+    tools:context=".home.ui.adddonor.AddDonorFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_donor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bot_donor_name_et"
+        android:background="@drawable/bg_edit_text_rounded_corner"
+        android:hint="@string/txt_hint_et_donor_name"
+        android:maxLines="1"
+        android:paddingStart="@dimen/padding_s_e_donor_name_et"
+        android:paddingTop="@dimen/padding_t_b_donor_name_et"
+        android:paddingEnd="@dimen/padding_s_e_donor_name_et"
+        android:paddingBottom="@dimen/padding_t_b_donor_name_et"
+        android:textColor="@color/color_text_hint_add_donor_name"
+        android:textColorHint="@color/color_text_hint_add_donor_name_hint"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v75"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_t_donor_email_et"
+        android:background="@drawable/bg_edit_text_rounded_corner"
+        android:hint="@string/txt_hint_et_email_name"
+        android:maxLines="1"
+        android:paddingStart="@dimen/padding_s_e_donor_email_et"
+        android:paddingTop="@dimen/padding_t_b_donor_email_et"
+        android:paddingEnd="@dimen/padding_s_e_donor_email_et"
+        android:paddingBottom="@dimen/padding_t_b_donor_email_et"
+        android:textColor="@color/color_text_hint_add_donor_email"
+        android:textColorHint="@color/color_text_hint_add_donor_email_hint"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_h25"
+        app:layout_constraintEnd_toEndOf="@+id/et_donor_name"
+        app:layout_constraintStart_toStartOf="@+id/et_donor_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_donor_name"
+        app:layout_constraintVertical_bias="0.22000003" />" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_card_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_heading_gender_selection"
+        android:textColor="@color/color_profile_name_card"
+        android:textSize="@dimen/txt_size_profile_name_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v15"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h25" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_male_avatar"
+        android:layout_width="@dimen/size_gender_avatar"
+        android:layout_height="@dimen/size_gender_avatar"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_h50"
+        app:layout_constraintEnd_toStartOf="@+id/view_gender_divider"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_profile_name"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/ic_man_av_selected" />
+
+    <LinearLayout
+        android:id="@+id/view_gender_divider"
+        android:layout_width="@dimen/width_gender_divider"
+        android:layout_height="@dimen/height_gender_divider"
+        android:layout_marginStart="@dimen/margin_s_e_gender_divider"
+        android:layout_marginEnd="@dimen/margin_s_e_gender_divider"
+        android:background="@color/color_divider_bg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_male_avatar"
+        app:layout_constraintEnd_toStartOf="@+id/iv_female_avatar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_male_avatar"
+        app:layout_constraintTop_toTopOf="@+id/iv_male_avatar" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_female_avatar"
+        android:layout_width="@dimen/size_gender_avatar"
+        android:layout_height="@dimen/size_gender_avatar"
+        app:layout_constraintBottom_toBottomOf="@+id/view_gender_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view_gender_divider"
+        app:layout_constraintTop_toTopOf="@+id/view_gender_divider"
+        app:srcCompat="@drawable/ic_woman_av_deselected" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_male_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_male_avatar"
+        android:textColor="@color/color_selected_text_gender_selection"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_h50"
+        app:layout_constraintEnd_toEndOf="@+id/iv_male_avatar"
+        app:layout_constraintStart_toStartOf="@+id/iv_male_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/iv_male_avatar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_female_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_female_avatar"
+        android:textColor="@color/color_unselected_text_gender_selection"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_h50"
+        app:layout_constraintEnd_toEndOf="@+id/iv_female_avatar"
+        app:layout_constraintStart_toStartOf="@+id/iv_female_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/iv_female_avatar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_heading_blood_group_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_heading_blood_group_selection"
+        android:textColor="@color/color_profile_name_card"
+        android:textSize="@dimen/txt_size_profile_name_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v15"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h50" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexBoxL_blood_group_item_holder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_t_b_group_item_holder"
+        android:layout_marginBottom="@dimen/margin_t_b_group_item_holder"
+        app:alignContent="stretch"
+        app:alignItems="stretch"
+        app:flexWrap="wrap"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_h75"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v75"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v15"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading_blood_group_selection">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/size_group_item"
+            android:layout_height="@dimen/size_group_item"
+            android:layout_marginTop="@dimen/margin_group_item"
+            android:layout_marginEnd="@dimen/margin_group_item"
+            android:layout_marginBottom="@dimen/margin_group_item"
+            android:background="@drawable/blood_group_item_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding_group_item"
+            android:text="@string/txt_blood_group_1"
+            android:textAlignment="center"
+            android:textColor="@color/color_group_item_disabled"
+            app:layout_alignSelf="flex_end" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/size_group_item"
+            android:layout_height="@dimen/size_group_item"
+            android:layout_marginStart="@dimen/margin_group_item"
+            android:layout_marginTop="@dimen/margin_group_item"
+            android:layout_marginEnd="@dimen/margin_group_item"
+            android:layout_marginBottom="@dimen/margin_group_item"
+            android:background="@drawable/blood_group_item_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding_group_item"
+            android:text="@string/txt_blood_group_2"
+            android:textAlignment="center"
+            android:textColor="@color/color_group_item_disabled"
+            app:layout_alignSelf="flex_end" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/size_group_item"
+            android:layout_height="@dimen/size_group_item"
+            android:layout_marginStart="@dimen/margin_group_item"
+            android:layout_marginTop="@dimen/margin_group_item"
+            android:layout_marginEnd="@dimen/margin_group_item"
+            android:layout_marginBottom="@dimen/margin_group_item"
+            android:background="@drawable/blood_group_item_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding_group_item"
+            android:text="@string/txt_blood_group_3"
+            android:textAlignment="center"
+            android:textColor="@color/color_group_item_disabled"
+            app:layout_alignSelf="flex_end" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_group_item_b_minus"
+            android:layout_width="@dimen/size_group_item"
+            android:layout_height="@dimen/size_group_item"
+            android:layout_marginStart="@dimen/margin_group_item"
+            android:layout_marginTop="@dimen/margin_group_item"
+            android:layout_marginEnd="@dimen/margin_group_item"
+            android:layout_marginBottom="@dimen/margin_group_item"
+            android:background="@drawable/blood_group_item_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding_group_item"
+            android:text="@string/txt_blood_group_4"
+            android:textAlignment="center"
+            android:textColor="@color/color_group_item_selected"
+            app:layout_alignSelf="flex_end" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/size_group_item"
+            android:layout_height="@dimen/size_group_item"
+            android:layout_marginStart="@dimen/margin_group_item"
+            android:layout_marginTop="@dimen/margin_group_item"
+            android:layout_marginEnd="@dimen/margin_group_item"
+            android:layout_marginBottom="@dimen/margin_group_item"
+            android:background="@drawable/blood_group_item_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding_group_item"
+            android:text="@string/txt_blood_group_5"
+            android:textAlignment="center"
+            android:textColor="@color/color_group_item_disabled"
+            app:layout_alignSelf="flex_end" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/size_group_item"
+            android:layout_height="@dimen/size_group_item"
+            android:layout_marginStart="@dimen/margin_group_item"
+            android:layout_marginTop="@dimen/margin_group_item"
+            android:layout_marginEnd="@dimen/margin_group_item"
+            android:layout_marginBottom="@dimen/margin_group_item"
+            android:background="@drawable/blood_group_item_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding_group_item"
+            android:text="@string/txt_blood_group_6"
+            android:textAlignment="center"
+            android:textColor="@color/color_group_item_disabled"
+            app:layout_alignSelf="flex_end" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/size_group_item"
+            android:layout_height="@dimen/size_group_item"
+            android:layout_marginStart="@dimen/margin_group_item"
+            android:layout_marginTop="@dimen/margin_group_item"
+            android:layout_marginEnd="@dimen/margin_group_item"
+            android:layout_marginBottom="@dimen/margin_group_item"
+            android:background="@drawable/blood_group_item_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding_group_item"
+            android:text="@string/txt_blood_group_7"
+            android:textAlignment="center"
+            android:textColor="@color/color_group_item_disabled"
+            app:layout_alignSelf="flex_end" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/size_group_item"
+            android:layout_height="@dimen/size_group_item"
+            android:layout_marginStart="@dimen/margin_group_item"
+            android:layout_marginTop="@dimen/margin_group_item"
+            android:layout_marginEnd="@dimen/margin_group_item"
+            android:layout_marginBottom="@dimen/margin_group_item"
+            android:background="@drawable/blood_group_item_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding_group_item"
+            android:text="@string/txt_blood_group_8"
+            android:textAlignment="center"
+            android:textColor="@color/color_group_item_disabled"
+            app:layout_alignSelf="flex_end" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tv_get_otp_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_b_submit_btn"
+        android:background="@drawable/bg_btn_circular_radius_filled"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_s_e_submit_btn"
+        android:paddingTop="@dimen/padding_t_b_submit_btn"
+        android:paddingEnd="@dimen/padding_s_e_submit_btn"
+        android:paddingBottom="@dimen/padding_t_b_submit_btn"
+        android:text="@string/txt_btn_done"
+        android:textColor="@color/color_txt_submit_btn"
+        android:textSize="@dimen/size_txt_submit_btn"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v75"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v15" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="@dimen/size_checkbox"
+        android:layout_height="@dimen/size_checkbox"
+        android:button="@drawable/checkbox_bg_selector"
+        android:padding="@dimen/padding_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView7"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v15"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_plasma_checkbox"
+        android:textColor="@color/color_txt_plasma_check"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView5"
+        app:layout_constraintEnd_toEndOf="@+id/materialTextView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/materialTextView5"
+        app:layout_constraintTop_toBottomOf="@+id/flexBoxL_blood_group_item_holder"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/materialCheckBox"
+        android:layout_width="@dimen/size_checkbox"
+        android:layout_height="@dimen/size_checkbox"
+        android:button="@drawable/checkbox_bg_selector"
+        android:padding="@dimen/padding_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView5"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v15"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_t_contact_show_checkbox"
+        android:text="@string/txt_contact_hide_checkbox"
+        android:textColor="@color/color_txt_number_show_check"
+        app:layout_constraintBottom_toTopOf="@+id/tv_get_otp_btn"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v75"
+        app:layout_constraintStart_toEndOf="@+id/materialCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

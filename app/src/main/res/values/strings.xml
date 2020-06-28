@@ -13,6 +13,30 @@
     <string name="txt_explore_description">Checkout the available donor can save a life. Please don\'t make any unnecessary request. May be you wont get it in right time. </string>
     <string name="txt_finish_btn_init_settings" translatable="false">FINISH</string>
     <string name="txt_ok_btn_initial_settings" translatable="false">OK</string>
+    <string name="txt_heading_gender_selection">Gender</string>
+    <string name="txt_hint_et_donor_name">Name</string>
+    <string name="txt_hint_et_email_name">Email</string>
+    <string name="txt_male_avatar">Male</string>
+    <string name="txt_female_avatar">Female</string>
+    <string name="txt_heading_blood_group_selection">Select Blood Group</string>
+    <string name="txt_plasma_checkbox">Become a Plasma donor also</string>
+    <string name="txt_contact_hide_checkbox">Do you want to make your contact number \n visible for other</string>
+    <string name="txt_btn_done">DONE</string>
+    <string name="txt_blood_group_1">A+</string>
+    <string name="txt_blood_group_2">A-</string>
+    <string name="txt_blood_group_4">B+</string>
+    <string name="txt_blood_group_5">O+</string>
+    <string name="txt_blood_group_3">B-</string>
+    <string name="txt_blood_group_6">O-</string>
+    <string name="txt_blood_group_7">AB-</string>
+    <string name="txt_blood_group_8">AB+</string>
+    <string name="txt_donor_card_bottom_notification">Last date of donation</string>
+    <string name="txt_demo_event_card_desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</string>
+    <string name="txt_demo_name">John Doe</string>
+    <string name="txt_demo_loc">Earth</string>
+    <string name="txt_country_code_bd">+88</string>
+    <string name="txt_mobile_no_hint">Mobile number</string>
+    <string name="txt_phone_verification_button">DONE</string>
 
 
 </resources>

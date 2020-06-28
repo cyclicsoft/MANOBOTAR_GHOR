@@ -1,4 +1,4 @@
-package com.cyclicsoft.manobotarghor.home.ui
+package com.cyclicsoft.manobotarghor.home.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,10 +12,11 @@ import com.cyclicsoft.manobotarghor.R
 class HomeFragment : Fragment() {
 
     companion object {
-        fun newInstance() = HomeFragment()
+        fun newInstance() =
+            HomeFragment()
     }
 
-    private lateinit var viewModel: HomeViewModel
+    private lateinit var mViewModel: HomeViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,7 +27,7 @@ class HomeFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
+        mViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

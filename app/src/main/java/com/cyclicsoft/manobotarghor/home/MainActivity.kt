@@ -6,7 +6,9 @@ import android.view.View
 import android.view.WindowManager
 import com.cyclicsoft.manobotarghor.R
 import com.cyclicsoft.manobotarghor.appfw.BaseActivity
-import com.cyclicsoft.manobotarghor.home.ui.HomeFragment
+import com.cyclicsoft.manobotarghor.home.ui.adddonor.AddDonorFragment
+import com.cyclicsoft.manobotarghor.home.ui.home.HomeFragment
+import com.cyclicsoft.manobotarghor.home.ui.phoneverification.PhoneVerificationFragment
 import eightbitlab.com.blurview.RenderScriptBlur
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_toolbar.*
@@ -20,7 +22,7 @@ class MainActivity : BaseActivity() {
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.fragment_container, HomeFragment.newInstance(), HomeFragment::class.java.simpleName)
+                .add(R.id.fragment_container, AddDonorFragment.newInstance(), HomeFragment::class.java.simpleName)
                 .commit()
         }
     }
