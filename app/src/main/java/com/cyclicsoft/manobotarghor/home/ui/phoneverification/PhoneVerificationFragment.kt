@@ -28,16 +28,7 @@ class PhoneVerificationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        firstPinView.setAnimationEnable(true)
-        tv_get_otp_btn.setOnClickListener {
-            YoYo.with(Techniques.SlideOutLeft)
-                .duration(600)
-                .onEnd {
-                    cl_add_phone_container.visibility = View.INVISIBLE
-                    cl_otp_container.visibility = View.VISIBLE
-                }
-                .playOn(cl_add_phone_container)
-        }
+//         
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
